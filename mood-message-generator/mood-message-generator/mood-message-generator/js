@@ -1,0 +1,23 @@
+let mood = document.getElementById("mood");
+let showBtn = document.getElementById("showBtn");
+let result = document.getElementById("result");
+
+showBtn.addEventListener("click", function () {
+  let value = mood.value;
+
+  if (value === "") {
+    result.innerText = "Please select a mood";
+  }
+  else if (value === "happy") {
+    result.innerText = "Keep smiling 😄 You’re doing great!";
+  }
+  else if (value === "sad") {
+    result.innerText = "It’s okay to feel sad. This too shall pass 💙";
+  }
+  else if (value === "angry") {
+    result.innerText = "Take a deep breath. Calm is power 🧘";
+  }
+  else if (value === "tired") {
+    result.innerText = "Rest is productive too 🌙";
+  }
+});
